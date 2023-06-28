@@ -7,6 +7,8 @@ export const cardOneVariants = {
         opacity: 1,
         x: 0,
         transition: {delay: 0.15, duration: 1}
+        
+
     }
 }
 

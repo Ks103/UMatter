@@ -8,8 +8,12 @@
     justify-content: center;
     align-items: center;
     margin: 0px 0px 50px 0px;
+    transition: transform .2s;
   }
-
+  
+  .CardDiv:hover{
+    transform: scale(1.5);
+  }
   /* Card*/
 
   .Card{ 
@@ -19,8 +23,14 @@
     justify-content: center;
     align-items: center;
     border-top: 5px solid #A020F0;
+    transition: transform .2s;
    }
+   .Card :hover{
+    transform: scale(1.5);
+    cursor: pointer;
 
+
+   }
    /* Card Body */
 
    .card-body {
@@ -37,4 +47,8 @@
     margin: 0 auto;
     border-radius: 50%;
     margin: 5px auto;
+    transition: transform .2s;
+  }
+  .CardImage:hover{
+    transform: scale(1.5);
   }

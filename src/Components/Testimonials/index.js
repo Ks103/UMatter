@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "./Swiper.css";
 
+
 class Testimonial extends Component {
   constructor() {
     super();
@@ -97,6 +98,7 @@ class Testimonial extends Component {
         whileInView={{ y: [130, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.8 }}
         style={{ width: "100%" }}
+        
       >
         <TestimonialsH1>
           <span ref={this.el} style={{ display: "inline-block" }} />
@@ -129,6 +131,8 @@ class Testimonial extends Component {
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
+            onMouseOut={{clickable:true}}
+            
           >
             {this.state.slides.map((slide, index) => {
               return (
@@ -138,6 +142,7 @@ class Testimonial extends Component {
                   </div>
                 </SwiperSlide>
               );
+              
             })}
           </Swiper>
         </TestimonialsWrapper>
